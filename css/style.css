@@ -209,7 +209,24 @@ h1 {
   justify-content: center;
 }
 
+.mainBox {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  padding: 96px 0;
+  background-color: #f2edff;
+  justify-content: center;
+}
+
 .manyText {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 32px;
+  gap: 64px;
+  display: flex;
+}
+
+.textBox {
   max-width: 1280px;
   width: 100%;
   padding: 0 32px;
@@ -317,6 +334,17 @@ h1 {
   gap: 64px;
 }
 
+.arrow span {
+  color: #6941c6;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.teamL {
+  display: flex;
+  flex-direction: column;
+}
+
 .have {
   display: flex;
   flex-direction: column;
@@ -345,6 +373,7 @@ h1 {
   display: flex;
   gap: 6px;
   align-items: center;
+  padding-top: 20px;
 }
 
 .one {
@@ -573,6 +602,13 @@ h1 {
   width: 100%;
 }
 
+.homeTwo {
+  display: flex;
+  gap: 12px;
+  width: 250px;
+  justify-content: space-between;
+}
+
 .products {
   padding-bottom: 4px;
   color: #181d27;
@@ -655,8 +691,18 @@ form {
 }
 
 .boxYou {
+  display: flex;
+  gap: 64px;
+}
+
+.wrapLeft {
+  display: flex;
+  gap: 24px;
+}
+
+.formHome {
     display: flex;
-    gap: 64px;
+    gap: 140px;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -671,11 +717,8 @@ form {
     display: flex;
   }
   .nav {
-    gap: 900px;
+    gap: 500px;
     padding-top: 20px;
-  }
-  html {
-    display: flex;
   }
 
   .credit {
@@ -722,6 +765,63 @@ form {
     min-height: 500px;
     height: 100%;
     background-size: cover;
+  }
+
+  .teamL {
+    flex-shrink: 4;
+  }
+
+  .cardBox {
+    width: 336px;
+  }
+
+  .textBox {
+    flex-direction: column;
+  }
+
+  .wrapLeft {
+    justify-content: space-evenly;
+  }
+
+  .photo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .woman {
+    border-radius: 0 0 16px 16px;
+    max-width: 700px;
+  }
+
+  .section {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .listItems {
+    flex-direction: column;
+  }
+
+  .formHome {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .desigh {
+    padding-bottom: 40px;
+  }
+
+  .form {
+    padding-bottom: 20px;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+  .wrapper {
+    max-width: 768px;
+    width: 100%;
   }
 }
 
