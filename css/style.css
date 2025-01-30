@@ -14,7 +14,7 @@ body {
 
 /* header & nav */
 
-.header {
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   width: 100%;
 }
 
-.nav {
+nav {
   display: flex;
   gap: 180px;
   align-items: center;
@@ -192,7 +192,7 @@ h1 {
 
 /* main */
 
-.main {
+main {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
@@ -561,7 +561,9 @@ h1 {
   padding-top: 20px;
 }
 
-.footer {
+/* footer */
+
+footer {
   display: flex;
   gap: 64px;
   background-color: #fafafa;
@@ -720,7 +722,7 @@ form {
     padding: 8px;
     display: flex;
   }
-  .nav {
+  nav {
     gap: 500px;
     padding-top: 20px;
   }
@@ -829,7 +831,7 @@ form {
     padding-bottom: 20px;
   }
 
-  .header {
+  header {
     overflow: hidden;
   }
 
@@ -859,12 +861,12 @@ form {
     padding: 8px;
     display: flex;
   }
-  .nav {
+  nav {
     gap: 200px;
     padding-top: 20px;
   }
 
-  .header {
+  header {
     overflow: hidden;
   }
 
@@ -887,7 +889,7 @@ form {
     height: unset;
   }
 
-  .nav {
+  nav {
     width: 300px;
     gap: unset;
   }
@@ -995,7 +997,6 @@ form {
   .lady {
     display: flex;
     flex-direction: column;
-    max-width: 288;
     width: 100%;
     background-color: gray;
   }
