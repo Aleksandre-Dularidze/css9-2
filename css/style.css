@@ -7,7 +7,6 @@ body {
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  background-color: gray;
   gap: 24px;
   align-items: center;
   margin: 0 auto;
@@ -87,6 +86,12 @@ body {
 .twoBtn {
   display: flex;
   justify-content: center;
+}
+
+.BtnTwo {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 
 .demoBtn {
@@ -270,7 +275,6 @@ h1 {
 .card {
   display: flex;
   padding-bottom: 96px;
-  gap: 64px;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
@@ -308,8 +312,8 @@ h1 {
 }
 
 .team {
-  padding: 0 32px;
   display: flex;
+  padding: 64px 32px 32px 0;
   gap: 64px;
 }
 
@@ -355,17 +359,30 @@ h1 {
 }
 
 .teamR {
-  border-radius: 26.947px;
-  border: 1.684px solid #d5d7da;
-  background: #fff;
+  border-radius: 30px;
+  border: 2px solid #d5d7da;
+  box-shadow: 0px 10.105px 13.474px -3.368px var(--Colors-Effects-Shadows-shadow-lg_01, rgba(10, 13, 18, 0.08)),
+    0px 3.368px 5.053px -1.684px var(--Colors-Effects-Shadows-shadow-lg_02, rgba(10, 13, 18, 0.03)),
+    0px 1.684px 1.684px -0.842px var(--Colors-Effects-Shadows-shadow-lg_03, rgba(10, 13, 18, 0.04));
+
+  min-width: 600px;
+  min-height: 450px;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  left: 200px;
+  top: 32px;
+  overflow: hidden;
 }
 
-.teamR img {
-  max-width: 1000px;
-  width: 100%;
-  position: relative;
-  right: 30px;
-  left: 80px;
+.photoR {
+  position: absolute;
+  border-radius: 30px;
+  background-image: url("../images/mockup.svg");
+  min-width: 600px;
+  min-height: 500px;
+  height: 100%;
+  background-size: cover;
 }
 
 .rightOne {
@@ -374,7 +391,7 @@ h1 {
 }
 
 .cardBox {
-  padding: 32px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -423,7 +440,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 32px 0;
+  padding: 32px 32px 40px 32px;
 }
 
 .check button {
@@ -435,11 +452,18 @@ h1 {
 .getS {
   display: flex;
   border-top: 1px solid #e9eaeb;
+  padding: 32px;
+  border-radius: 0 0 16px 16px;
+  border: 1px solid #e9eaeb;
+  background: #fff;
+  box-shadow: 0px 12px 16px -4px var(--Colors-Effects-Shadows-shadow-lg_01, rgba(10, 13, 18, 0.08)),
+    0px 4px 6px -2px var(--Colors-Effects-Shadows-shadow-lg_02, rgba(10, 13, 18, 0.03)),
+    0px 2px 2px -1px var(--Colors-Effects-Shadows-shadow-lg_03, rgba(10, 13, 18, 0.04));
 }
 
 .getS button {
   padding: 12px 18px;
-  border-radius: var(--radius-md, 8px);
+  border-radius: 8px;
   background: #7f56d9;
   flex: 1;
   color: #fff;
@@ -450,6 +474,8 @@ h1 {
 .photo {
   display: flex;
   padding: 96px 0;
+  max-width: 1280px;
+  width: 100%;
 }
 
 .section {
@@ -476,7 +502,16 @@ h1 {
 }
 
 .woman {
-  border-radius: 16px 0;
+  max-width: 480px;
+  width: 100%;
+  min-height: 458px;
+  height: 100%;
+  display: flex;
+  border-radius: 0 16px 16px 0;
+  background-image: url("../images/Image.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .renee {
@@ -489,17 +524,204 @@ h1 {
 .product {
   color: #e9d7fe;
   font-weight: 400;
-  line-height: 24px 
+  line-height: 24px;
 }
 
 .dots {
-    align-self: flex-start;
-    padding-top: 20px;
+  align-self: flex-start;
+  padding-top: 20px;
+}
+
+.footer {
+  display: flex;
+  gap: 64px;
+  background-color: #fafafa;
+  padding: 64px 48px;
+  max-width: 1440px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.listItems {
+  display: flex;
+  padding: 0 32px;
+  max-width: 1280px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ui {
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.desigh {
+  color: #535862;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 96px;
+  width: 100%;
+}
+
+.products {
+  padding-bottom: 4px;
+  color: #181d27;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.over {
+  color: #181d27;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.over:hover {
+  color: #6941c6;
+}
+
+form label {
+  color: #181d27;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+form input {
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid #7f56d9;
+  background: #fff;
+  box-shadow: 4px 4px 20.9px 0px rgba(127, 86, 217, 0.25);
+  padding: 10px 14px;
+}
+
+#email::placeholder {
+  overflow: hidden;
+  color: #717680;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+form button {
+  padding: 10px 16px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: var(--radius-md, 8px);
+  background: #7f56d9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form {
+  display: flex;
+  gap: 16px;
+}
+
+.copy {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e9eaeb;
+  padding: 32px 32px 0;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.unit {
+  color: #717680;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.united {
+  display: flex;
+  gap: 16px;
+}
+
+.boxYou {
+    display: flex;
+    gap: 64px;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  body {
-    background-color: gray;
+  .list {
+    display: none;
+  }
+  .twoBtn {
+    display: none;
+  }
+  .burger {
+    padding: 8px;
+    display: flex;
+  }
+  .nav {
+    gap: 900px;
+    padding-top: 20px;
+  }
+  html {
+    display: flex;
+  }
+
+  .credit {
+    overflow: hidden;
+  }
+
+  .wrapLogo {
+    max-width: 400px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .join {
+    align-items: center;
+  }
+
+  .boxYou {
+    flex-direction: column;
+  }
+
+  .manyText {
+    justify-content: space-around;
+  }
+
+  .teamR {
+    min-width: 400px;
+    width: 100%;
+    min-height: 1000px;
+  }
+  .team {
+    gap: unset;
+  }
+
+  .feature {
+    max-width: unset;
+    width: unset;
+  }
+
+  .photoR {
+    position: absolute;
+    border-radius: 30px;
+    background-image: url("../images/mockup.svg");
+    min-width: 600px;
+    min-height: 500px;
+    height: 100%;
+    background-size: cover;
   }
 }
 
