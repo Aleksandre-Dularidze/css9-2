@@ -565,7 +565,7 @@ h1 {
   display: flex;
   gap: 64px;
   background-color: #fafafa;
-  padding: 64px 48px;
+  padding: 64px 0 48px 0;
   max-width: 1440px;
   width: 100%;
   flex-direction: column;
@@ -701,11 +701,15 @@ form {
 }
 
 .formHome {
-    display: flex;
-    gap: 140px;
+  display: flex;
+  gap: 140px;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  body:hover {
+    all: unset;
+  }
+
   .list {
     display: none;
   }
@@ -723,6 +727,10 @@ form {
 
   .credit {
     overflow: hidden;
+  }
+
+  .one {
+    width: 150px;
   }
 
   .wrapLogo {
@@ -744,9 +752,8 @@ form {
   }
 
   .teamR {
-    min-width: 400px;
-    width: 100%;
     min-height: 1000px;
+    margin-left: 50px;
   }
   .team {
     gap: unset;
@@ -768,7 +775,13 @@ form {
   }
 
   .teamL {
-    flex-shrink: 4;
+    position: absolute;
+    left: 150px;
+    max-width: 200px;
+  }
+
+  .one {
+    width: unset;
   }
 
   .cardBox {
@@ -790,6 +803,7 @@ form {
   .woman {
     border-radius: 0 0 16px 16px;
     max-width: 700px;
+    width: 100%;
   }
 
   .section {
@@ -826,7 +840,387 @@ form {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    background-color: tomato;
+  body:hover {
+    all: unset;
+  }
+
+  .wrapper {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .list {
+    display: none;
+  }
+  .twoBtn {
+    display: none;
+  }
+  .burger {
+    padding: 8px;
+    display: flex;
+  }
+  .nav {
+    gap: 200px;
+    padding-top: 20px;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+  .super {
+    font-size: 14px;
+    text-align: left;
+    max-width: 258px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .credit img {
+    width: 400px;
+  }
+
+  .credit {
+    height: unset;
+  }
+
+  .nav {
+    width: 300px;
+    gap: unset;
+  }
+
+  h1 {
+    max-width: 258px;
+    width: 100%;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  .simple {
+    font-size: 18px;
+    text-align: left;
+    max-width: 258px;
+    width: 100%;
+  }
+
+  .text {
+    align-items: center;
+  }
+
+  .BtnTwo {
+    flex-direction: column-reverse;
+    max-width: 288px;
+    width: 100%;
+  }
+
+  .hero {
+    align-items: center;
+  }
+
+  .demoBtn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapLogo {
+    flex-wrap: wrap;
+    max-width: 288px;
+    width: 100%;
+  }
+
+  .comp {
+    max-width: 228px;
+    width: 100%;
+  }
+
+  .join {
+    align-items: center;
+  }
+
+  .right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .manyText {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .boxYou {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .photoR {
+    position: absolute;
+    border-radius: 30px;
+    background-image: url("../images/mockup.svg");
+    min-width: 600px;
+    min-height: 500px;
+    height: 100%;
+    background-size: cover;
+  }
+  .photo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .woman {
+    max-width: 480px;
+    width: 100%;
+    min-height: 458px;
+    height: 100%;
+    display: flex;
+    border-radius: 0 16px 16px 0;
+    background-image: url("../images/Image.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .section {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+  .lady {
+    display: flex;
+    flex-direction: column;
+    max-width: 288;
+    width: 100%;
+    background-color: gray;
+  }
+
+  .the {
+    font-size: 30px;
+  }
+
+  .spend {
+    font-size: 18px;
+  }
+
+  .give {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btnBox {
+    display: flex;
+  }
+
+  .giveWrap {
+    padding: 40px 24px 48px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .gap span {
+    font-size: 18px;
+  }
+
+  .signBtn {
+    font-size: 16px;
+  }
+
+  .demoBtn {
+    font-size: 16px;
+  }
+
+  .give span {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+  }
+
+  .give p {
+    color: #e9d7fe;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .btnBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .buttonOne {
+    border-radius: var(--radius-md, 8px);
+    background: #7f56d9;
+    align-self: stretch;
+    padding: 12px 18px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .buttonTwo {
+    border-radius: var(--radius-md, 8px);
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid #d5d7da;
+    background: #fff;
+    box-shadow: 0px 0px 0px 1px;
+    align-self: stretch;
+    padding: 12px 18px;
+    color: #414651;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .lady {
+    background-color: #53389e;
+    border-radius: 16px;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    max-width: 288px;
+    width: 100%;
+  }
+
+  .girl {
+    max-width: 480px;
+    width: 100%;
+    min-height: 458px;
+    height: 100%;
+    display: flex;
+    border-radius: 0 0 16px 16px;
+    background-image: url("../images/ImageTwo.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .in {
+    font-size: 30px;
+  }
+
+  .get {
+    font-size: 18px;
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .team {
+    flex-wrap: wrap;
+    max-width: 288px;
+    width: 100%;
+    padding: unset;
+    justify-content: center;
+  }
+
+  .teamR {
+    left: 0px;
+    top: 0px;
+  }
+
+  .photoR {
+    min-width: 288px;
+    min-height: 20px;
+  }
+
+  .teamR {
+    min-width: 288px;
+    min-height: 220px;
+    border-radius: unset;
+    margin-bottom: 64px;
+  }
+
+  .textBox {
+    flex-wrap: wrap;
+  }
+
+  .wrapLeft {
+    flex-wrap: wrap;
+  }
+
+  .check button {
+    max-width: 200px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .rightOne span {
+    font-size: 14px;
+  }
+
+  .feature {
+    padding: unset;
+  }
+
+  .bill {
+    font-size: 36px;
+  }
+
+  .get {
+    padding-bottom: 64px;
+  }
+
+  .section {
+    flex-direction: column;
+    flex: 1;
+    border-radius: 16px 16px 0 0;
+    max-width: 288px;
+    width: 100%;
+  }
+
+  .love {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .section {
+    padding: 40px 24px;
+  }
+
+  .woman {
+    max-width: 288px;
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .listItems {
+    flex-direction: column;
+    max-width: 288px;
+    width: 100%;
+    gap: 48px;
+  }
+
+  .formHome {
+    flex-direction: column-reverse;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .homeTwo {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .copy {
+    flex-direction: column;
+    gap: 24px;
   }
 }
