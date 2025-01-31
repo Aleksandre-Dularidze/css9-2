@@ -408,6 +408,10 @@ main {
   align-items: flex-end;
 }
 
+.teamRPlus {
+  display: none;
+}
+
 .photoR {
   position: absolute;
   border-radius: 30px;
@@ -589,7 +593,6 @@ footer {
 }
 
 .ui {
-  max-width: 320px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -674,6 +677,10 @@ form {
   gap: 16px;
 }
 
+.leftOne {
+  min-height: 618px;
+}
+
 .form {
   display: flex;
   gap: 16px;
@@ -719,6 +726,10 @@ form {
     all: unset;
   }
 
+  .over {
+    color: #6941C6;
+  }
+
   .list {
     display: none;
   }
@@ -728,10 +739,6 @@ form {
   .burger {
     padding: 8px;
     display: flex;
-  }
-  nav {
-    gap: 500px;
-    padding-top: 20px;
   }
 
   .credit {
@@ -801,12 +808,11 @@ form {
   }
   .woman {
     border-radius: 0 0 16px 16px;
-    max-width: 700px;
-    width: 100%;
+    max-width: 100%;
+    min-height: 700px;
   }
 
   .section {
-    max-width: 700px;
     width: 100%;
     border-radius: 16px 16px 0 0;
   }
@@ -835,6 +841,11 @@ form {
   .teamR img {
     height: 687px;
   }
+
+  h1 {
+    max-width: 704px;
+  width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -842,9 +853,9 @@ form {
     all: unset;
   }
 
-  .wrapper {
-    max-width: 320px;
-    width: 100%;
+  .teamL {
+    align-items: unset;
+    padding: 0 16px;
   }
 
   .list {
@@ -857,10 +868,6 @@ form {
     padding: 8px;
     display: flex;
   }
-  nav {
-    gap: 200px;
-    padding-top: 20px;
-  }
 
   header {
     overflow: hidden;
@@ -869,7 +876,7 @@ form {
   .super {
     font-size: 14px;
     text-align: left;
-    max-width: 258px;
+    max-width: 288px;
     width: 100%;
   }
 
@@ -878,20 +885,17 @@ form {
   }
 
   .credit img {
-    width: 400px;
+    padding-top: 45px;
+    max-width: 800px;
+    width: 800px;
   }
 
   .credit {
     height: unset;
   }
 
-  nav {
-    width: 300px;
-    gap: unset;
-  }
-
   h1 {
-    max-width: 258px;
+    max-width: 288px;
     width: 100%;
     line-height: 35px;
     text-align: left;
@@ -900,7 +904,7 @@ form {
   .simple {
     font-size: 18px;
     text-align: left;
-    max-width: 258px;
+    max-width: 288px;
     width: 100%;
   }
 
@@ -950,6 +954,7 @@ form {
 
   .manyText {
     flex-direction: column;
+    align-items: center;
     gap: 48px;
   }
 
@@ -1020,6 +1025,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    background-color: #53389e;
+    border-radius: 16px 16px 0 0;
   }
 
   .gap span {
@@ -1078,17 +1085,12 @@ form {
   }
 
   .lady {
-    background-color: #53389e;
-    border-radius: 16px;
-    position: relative;
-    bottom: 30px;
-    left: 20px;
-    max-width: 288px;
-    width: 100%;
+    width: 90%;
+    padding: 0 16px;
+    background-color: #fff;
   }
 
   .girl {
-    max-width: 480px;
     width: 100%;
     min-height: 458px;
     height: 100%;
@@ -1114,35 +1116,26 @@ form {
 
   .team {
     flex-wrap: wrap;
-    max-width: 288px;
     width: 100%;
     padding: unset;
     justify-content: center;
   }
 
-  .teamR {
-    left: 0px;
-    top: 0px;
-  }
 
   .photoR {
     min-width: 288px;
     min-height: 20px;
   }
 
-  .teamR {
-    min-width: 288px;
-    min-height: 220px;
-    border-radius: unset;
-    margin-bottom: 64px;
-  }
-
   .textBox {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
   }
 
   .wrapLeft {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .check button {
@@ -1153,10 +1146,6 @@ form {
 
   .rightOne span {
     font-size: 14px;
-  }
-
-  .feature {
-    padding: unset;
   }
 
   .bill {
@@ -1183,17 +1172,16 @@ form {
 
   .section {
     padding: 40px 24px;
+    max-width: 100%;
   }
 
   .woman {
-    max-width: 288px;
-    width: 100%;
+    max-width: 100%;
     border-radius: 0 0 16px 16px;
   }
 
   .listItems {
     flex-direction: column;
-    max-width: 288px;
     width: 100%;
     gap: 48px;
   }
@@ -1218,5 +1206,29 @@ form {
   .copy {
     flex-direction: column;
     gap: 24px;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  .teamRPlus {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .teamR {
+    display: none;
+
+  }
+
+  .teamRPlus img {
+    padding-bottom: 80px;
+    width: 100%;
+  }
+
+  .over {
+    color: #6941C6;
   }
 }
