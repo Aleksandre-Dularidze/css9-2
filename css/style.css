@@ -5,11 +5,8 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  width: 100%;
   gap: 24px;
   align-items: center;
-  margin: 0 auto;
 }
 
 /* header & nav */
@@ -19,15 +16,18 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #53389e;
-  max-width: 1440px;
   width: 100%;
+  overflow: hidden;
 }
 
 nav {
   display: flex;
-  gap: 180px;
   align-items: center;
   justify-content: space-between;
+  padding: 16px 16px;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  width: 100%;
 }
 
 .twoBtn {
@@ -128,15 +128,15 @@ nav {
 }
 
 .burger {
-    display: none;
+  display: none;
 }
 
 .give {
-    display: none;
+  display: none;
 }
 
 .btnBox {
-    display: none;
+  display: none;
 }
 
 h1 {
@@ -164,7 +164,6 @@ h1 {
 
 .credit {
   padding: 0 96px;
-  max-width: 1280px;
   width: 100%;
   height: 456px;
   display: flex;
@@ -176,7 +175,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 96px 0;
+  padding: 96px 16px;
 }
 
 .comp {
@@ -190,6 +189,7 @@ h1 {
   display: flex;
   gap: 24px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .right {
@@ -207,23 +207,20 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
   width: 100%;
   gap: 24px;
 }
 
 .mainText {
   display: flex;
-  max-width: 1440px;
   width: 100%;
-  padding: 96px 0;
+  padding: 96px 16px;
   background-color: #f2edff;
   justify-content: center;
 }
 
 .mainBox {
   display: flex;
-  max-width: 1440px;
   width: 100%;
   padding: 96px 0;
   background-color: #f2edff;
@@ -231,19 +228,19 @@ main {
 }
 
 .manyText {
-  max-width: 1280px;
   width: 100%;
-  padding: 0 32px;
   gap: 64px;
   display: flex;
+  justify-content: center;
 }
 
 .textBox {
   max-width: 1280px;
   width: 100%;
-  padding: 0 32px;
-  gap: 64px;
+  padding: 0 16px;
   display: flex;
+  justify-content: space-between;
+  gap: 64px;
 }
 
 .zap {
@@ -305,14 +302,14 @@ main {
   display: flex;
   padding-bottom: 96px;
   flex-direction: column;
-  align-items: center;
   overflow: hidden;
+  align-items: center;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
-  padding: 0px 32px;
+  padding: 0 16px;
   max-width: 1280px;
   width: 100%;
 }
@@ -338,11 +335,14 @@ main {
   font-weight: 400;
   line-height: 30px;
   padding-top: 20px;
+  max-width: 768px;
+  width: 100%;
 }
 
 .team {
+  width: 100%;
   display: flex;
-  padding: 64px 32px 32px 0;
+  padding: 64px 0 16px 16px;
   gap: 64px;
 }
 
@@ -355,6 +355,8 @@ main {
 .teamL {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .have {
@@ -400,20 +402,10 @@ main {
 }
 
 .teamR {
-  border-radius: 30px;
-  border: 2px solid #d5d7da;
-  box-shadow: 0px 10.105px 13.474px -3.368px var(--Colors-Effects-Shadows-shadow-lg_01, rgba(10, 13, 18, 0.08)),
-    0px 3.368px 5.053px -1.684px var(--Colors-Effects-Shadows-shadow-lg_02, rgba(10, 13, 18, 0.03)),
-    0px 1.684px 1.684px -0.842px var(--Colors-Effects-Shadows-shadow-lg_03, rgba(10, 13, 18, 0.04));
-
-  min-width: 600px;
-  min-height: 450px;
-  height: 100%;
-  background-size: cover;
-  position: relative;
-  left: 200px;
-  top: 32px;
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .photoR {
@@ -429,11 +421,14 @@ main {
 .rightOne {
   max-width: 440px;
   width: 100%;
+  padding: unset;
 }
 
 .cardBox {
   padding-top: 32px;
   display: flex;
+  min-width: 340px;
+  width: 100%;
   flex-direction: column;
   gap: 16px;
   background-color: #fff;
@@ -514,7 +509,7 @@ main {
 
 .photo {
   display: flex;
-  padding: 96px 0;
+  padding: 96px 16px 0 16px;
   max-width: 1280px;
   width: 100%;
 }
@@ -580,14 +575,14 @@ footer {
   gap: 64px;
   background-color: #fafafa;
   padding: 64px 0 48px 0;
-  max-width: 1440px;
   width: 100%;
   flex-direction: column;
+  align-items: center;
 }
 
 .listItems {
   display: flex;
-  padding: 0 32px;
+  padding: 0 16px;
   max-width: 1280px;
   width: 100%;
   justify-content: space-between;
@@ -688,7 +683,7 @@ form {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #e9eaeb;
-  padding: 32px 32px 0;
+  padding: 32px 16px 0 16px;
   max-width: 1280px;
   width: 100%;
 }
@@ -765,14 +760,6 @@ form {
     justify-content: space-around;
   }
 
-  .teamR {
-    min-height: 1000px;
-    margin-left: 50px;
-  }
-  .team {
-    gap: unset;
-  }
-
   .feature {
     max-width: unset;
     width: unset;
@@ -789,9 +776,7 @@ form {
   }
 
   .teamL {
-    position: absolute;
-    left: 150px;
-    max-width: 200px;
+    min-width: 320px;
   }
 
   .one {
@@ -847,9 +832,8 @@ form {
     overflow: hidden;
   }
 
-  .wrapper {
-    max-width: 768px;
-    width: 100%;
+  .teamR img {
+    height: 687px;
   }
 }
 
