@@ -727,7 +727,7 @@ form {
   }
 
   .over {
-    color: #6941C6;
+    color: #6941c6;
   }
 
   .list {
@@ -844,7 +844,7 @@ form {
 
   h1 {
     max-width: 704px;
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -876,7 +876,6 @@ form {
   .super {
     font-size: 14px;
     text-align: left;
-    max-width: 288px;
     width: 100%;
   }
 
@@ -886,8 +885,6 @@ form {
 
   .credit img {
     padding-top: 45px;
-    max-width: 800px;
-    width: 800px;
   }
 
   .credit {
@@ -895,7 +892,6 @@ form {
   }
 
   h1 {
-    max-width: 288px;
     width: 100%;
     line-height: 35px;
     text-align: left;
@@ -904,22 +900,24 @@ form {
   .simple {
     font-size: 18px;
     text-align: left;
-    max-width: 288px;
     width: 100%;
   }
 
   .text {
-    align-items: center;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .BtnTwo {
     flex-direction: column-reverse;
-    max-width: 288px;
+    padding: 0 16px;
     width: 100%;
   }
 
   .hero {
     align-items: center;
+    width: 100%;
   }
 
   .demoBtn {
@@ -1121,7 +1119,6 @@ form {
     justify-content: center;
   }
 
-
   .photoR {
     min-width: 288px;
     min-height: 20px;
@@ -1220,7 +1217,6 @@ form {
 
   .teamR {
     display: none;
-
   }
 
   .teamRPlus img {
@@ -1229,6 +1225,6 @@ form {
   }
 
   .over {
-    color: #6941C6;
+    color: #6941c6;
   }
 }
